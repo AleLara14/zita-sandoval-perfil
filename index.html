@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil Profesional | Zita Sandoval Sánchez</title>
+  <style>
+    :root{
+      --uv-green:#00573F;
+      --uv-green-2:#0CA952;
+      --ink:#1f2937;
+      --muted:#6b7280;
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --line:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      background:var(--bg);
+      color:var(--ink);
+    }
+    /* Top bar institucional */
+    .topbar{
+      background:var(--uv-green);
+      color:#fff;
+      padding:10px 18px;
+      font-size:14px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+    }
+    .topbar .left{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .pill{
+      border:1px solid rgba(255,255,255,.35);
+      padding:4px 10px;
+      border-radius:999px;
+      font-size:12px;
+      opacity:.95;
+      white-space:nowrap;
+    }
+
+    /* Header */
+    header{
+      background:linear-gradient(180deg, #ffffff 0%, #ffffff 55%, rgba(12,169,82,.06) 100%);
+      border-bottom:1px solid var(--line);
+    }
+    .wrap{max-width:1100px; margin:0 auto; padding:22px 18px;}
+    .brand{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo-box{
+      width:56px; height:56px;
+      border-radius:12px;
+      background:linear-gradient(135deg, var(--uv-green), var(--uv-green-2));
+      display:flex; align-items:center; justify-content:center;
+      color:#fff; font-weight:700;
+      letter-spacing:.5px;
+    }
+    .title h1{margin:0; font-size:28px; line-height:1.15;}
+    .title p{margin:6px 0 0; color:var(--muted);}
+
+    /* Layout */
+    main{padding:26px 0 40px;}
+    .grid{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:18px;
+    }
+    @media(max-width:900px){ .grid{grid-template-columns:1fr;} }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:18px;
+      box-shadow:0 6px 18px rgba(15,23,42,.06);
+    }
+    .card h2{
+      margin:0 0 12px;
+      font-size:18px;
+      color:var(--uv-green);
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .card h2:before{
+      content:"";
+      width:10px; height:10px;
+      background:var(--uv-green-2);
+      border-radius:3px;
+      display:inline-block;
+    }
+    .kv{margin:0; padding:0; list-style:none;}
+    .kv li{
+      padding:10px 0;
+      border-top:1px solid var(--line);
+    }
+    .kv li:first-child{border-top:none; padding-top:0;}
+    .k{font-weight:600;}
+    .v{color:var(--muted); margin-top:4px;}
+    .badge{
+      display:inline-block;
+      padding:4px 10px;
+      border-radius:999px;
+      background:rgba(12,169,82,.12);
+      border:1px solid rgba(12,169,82,.25);
+      color:var(--uv-green);
+      font-size:12px;
+      font-weight:600;
+      margin-right:6px;
+      margin-top:6px;
+    }
+    .note{color:var(--muted); font-size:14px; line-height:1.6;}
+    footer{
+      border-top:1px solid var(--line);
+      background:#fff;
+      color:var(--muted);
+      font-size:13px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="left">
+      <span class="pill">Universidad Veracruzana</span>
+      <span class="pill">Facultad de Enfermería · Región Veracruz</span>
+    </div>
+    <div class="right">
+      <span class="pill">Perfil profesional</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo-box">UV</div>
+        <div class="title">
+          <h1>Dra. Zita Sandoval Sánchez</h1>
+          <p>Licenciada en Enfermería y Obstetricia · Maestra en Ciencias de Enfermería · Doctora en Educación</p>
+          <span class="badge">Experiencia clínica: 27 años</span>
+          <span class="badge">Experiencia docente: 19 años</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="grid">
+
+        <section class="card">
+          <h2>Resumen</h2>
+          <p class="note">
+            Profesional de enfermería con formación de posgrado y trayectoria consolidada en el ámbito clínico
+            y educativo. Experiencia en atención hospitalaria en el Instituto Mexicano del Seguro Social (IMSS)
+            y en docencia universitaria en la Facultad de Enfermería, Región Veracruz, de la Universidad Veracruzana.
+          </p>
+          <p class="note" style="margin-top:10px;">
+            <strong>Ámbitos de desempeño:</strong> práctica clínica hospitalaria, formación de recursos humanos,
+            fortalecimiento de competencias profesionales y mejora continua en procesos educativos.
+          </p>
+        </section>
+
+        <aside class="card">
+          <h2>Datos clave</h2>
+          <ul class="kv">
+            <li>
+              <div class="k">Formación</div>
+              <div class="v">Licenciatura en Enfermería y Obstetricia · Maestría en Ciencias de Enfermería · Doctorado en Educación</div>
+            </li>
+            <li>
+              <div class="k">Experiencia profesional</div>
+              <div class="v">27 años en Hospital del Instituto Mexicano del Seguro Social (IMSS)</div>
+            </li>
+            <li>
+              <div class="k">Experiencia docente</div>
+              <div class="v">19 años en Facultad de Enfermería, Región Veracruz, Universidad Veracruzana</div>
+            </li>
+          </ul>
+        </aside>
+
+        <section class="card">
+          <h2>Formación académica</h2>
+          <ul class="kv">
+            <li>
+              <div class="k">Licenciatura</div>
+              <div class="v">Enfermería y Obstetricia</div>
+            </li>
+            <li>
+              <div class="k">Maestría</div>
+              <div class="v">Ciencias de Enfermería</div>
+            </li>
+            <li>
+              <div class="k">Doctorado</div>
+              <div class="v">Educación</div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Trayectoria</h2>
+          <ul class="kv">
+            <li>
+              <div class="k">Experiencia clínica</div>
+              <div class="v">27 años de experiencia en hospital del IMSS.</div>
+            </li>
+            <li>
+              <div class="k">Experiencia docente</div>
+              <div class="v">19 años de experiencia docente en la Facultad de Enfermería, Región Veracruz, UV.</div>
+            </li>
+          </ul>
+          <p class="note" style="margin-top:12px;">
+            *La información presentada se elaboró con base en el perfil proporcionado.
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © 2026 · Universidad Veracruzana · Facultad de Enfermería · Región Veracruz
+    </div>
+  </footer>
+
+</body>
+</html>
